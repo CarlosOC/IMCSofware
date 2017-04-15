@@ -1,3 +1,5 @@
 <RCC>
-    <qresource prefix="/ICONOS"/>
+    <qresource prefix="/ICONOS">
+        <file>SplashScreen.png</file>
+    </qresource>
 </RCC>

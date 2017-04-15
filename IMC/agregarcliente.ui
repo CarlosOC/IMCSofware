@@ -16,6 +16,10 @@
   <property name="windowTitle">
    <string>Agregar Cliente</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="imagenes.qrc">
+    <normaloff>:/ICONOS/SplashScreen.png</normaloff>:/ICONOS/SplashScreen.png</iconset>
+  </property>
   <widget class="QLabel" name="label_Dni">
    <property name="geometry">
     <rect>
@@ -2722,7 +2726,9 @@
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="imagenes.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>radioButton_MedicamentoSi</sender>
