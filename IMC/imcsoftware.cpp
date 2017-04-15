@@ -40,7 +40,9 @@ IMCsoftware::IMCsoftware(QWidget *parent) :
     connect(serial, SIGNAL(readyRead()), this, SLOT(readData()));
 //! [2]
     connect(console, SIGNAL(getData(QByteArray)), this, SLOT(writeData(QByteArray)));
-    // Para el Puerto Serie: FIN
+    //Para el Puerto Serie: FIN
+
+    //Logo:
 
 
 

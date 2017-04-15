@@ -7,6 +7,9 @@
 #include <QtSql/QSqlQuery>
 #include <QtSql/QSqlError>
 #include <QtSerialPort/QSerialPort>
+#include <QSplashScreen>
+#include <QTimer>
+#include "QThread"
 
 namespace Ui {
 class IMCsoftware;
