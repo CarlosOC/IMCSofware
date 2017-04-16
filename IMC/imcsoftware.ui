@@ -10,17 +10,29 @@
     <height>418</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <family>Visby CF Bold</family>
+    <pointsize>10</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
   <property name="windowTitle">
-   <string>IMCsoftware</string>
+   <string>IMCSoftware</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="imagenes.qrc">
+    <normaloff>:/ICONOS/Desktop/IMG-20170414-WA0009.jpg</normaloff>:/ICONOS/Desktop/IMG-20170414-WA0009.jpg</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QCalendarWidget" name="calendarWidget">
     <property name="geometry">
      <rect>
       <x>590</x>
-      <y>130</y>
+      <y>140</y>
       <width>311</width>
-      <height>211</height>
+      <height>201</height>
      </rect>
     </property>
    </widget>
@@ -33,8 +45,16 @@
       <height>167</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Visby CF Bold</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="title">
-     <string>Clientes Que se les Vencio la Cuota el Dia de Hoy</string>
+     <string>Clientes con cuota vencida el dia de la fecha</string>
     </property>
     <layout class="QGridLayout" name="gridLayout_2">
      <item row="0" column="1">
@@ -52,7 +72,7 @@
      </rect>
     </property>
     <property name="title">
-     <string>Clientes Que Tiene Vencida la Cuota</string>
+     <string>Cliente con cuota vencida</string>
     </property>
     <layout class="QGridLayout" name="gridLayout_3">
      <item row="0" column="0">
@@ -60,17 +80,23 @@
      </item>
     </layout>
    </widget>
-   <widget class="QLabel" name="label_logo">
+   <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>720</x>
-      <y>80</y>
-      <width>31</width>
-      <height>16</height>
+      <x>600</x>
+      <y>10</y>
+      <width>301</width>
+      <height>121</height>
      </rect>
     </property>
     <property name="text">
-     <string>LOGO </string>
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="imagenes.qrc">:/ICONOS/Desktop/IMC_Logo.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
   </widget>
@@ -80,7 +106,7 @@
      <x>0</x>
      <y>0</y>
      <width>911</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuClientes">
@@ -125,24 +151,63 @@
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionNuevo_Cliente">
+   <property name="icon">
+    <iconset resource="imagenes.qrc">
+     <normaloff>:/ICONOS/Desktop/181501-interface/181501-interface/png/user-1.png</normaloff>:/ICONOS/Desktop/181501-interface/181501-interface/png/user-1.png</iconset>
+   </property>
    <property name="text">
     <string>Nuevo Cliente</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Visby CF Bold</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="shortcut">
     <string>Ctrl+N</string>
    </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
   </action>
   <action name="actionBuscar_Cliente">
+   <property name="icon">
+    <iconset resource="imagenes.qrc">
+     <normaloff>:/ICONOS/Desktop/181501-interface/181501-interface/png/zoom-in.png</normaloff>:/ICONOS/Desktop/181501-interface/181501-interface/png/zoom-in.png</iconset>
+   </property>
    <property name="text">
     <string>Buscar Cliente</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Visby CF Bold</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="shortcut">
     <string>Ctrl+B</string>
    </property>
   </action>
   <action name="actionVer_Lista_de_Clientes">
+   <property name="icon">
+    <iconset resource="imagenes.qrc">
+     <normaloff>:/ICONOS/Desktop/181501-interface/181501-interface/png/document-3.png</normaloff>:/ICONOS/Desktop/181501-interface/181501-interface/png/document-3.png</iconset>
+   </property>
    <property name="text">
     <string>Ver Lista de Clientes</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Visby CF Bold</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="shortcut">
     <string>Ctrl+L</string>
@@ -174,6 +239,14 @@
    </property>
    <property name="toolTip">
     <string>Connect to serial port</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Visby CF Bold</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="shortcut">
     <string>Ctrl+C</string>
@@ -238,6 +311,8 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="imagenes.qrc"/>
+ </resources>
  <connections/>
 </ui>

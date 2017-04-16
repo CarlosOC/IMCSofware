@@ -1,5 +1,10 @@
 <RCC>
     <qresource prefix="/ICONOS">
-        <file>SplashScreen.png</file>
+        <file>../../../../Desktop/181501-interface/181501-interface/png/settings.png</file>
+        <file>../../../../Desktop/181501-interface/181501-interface/png/user-1.png</file>
+        <file>../../../../Desktop/181501-interface/181501-interface/png/zoom-in.png</file>
+        <file>../../../../Desktop/181501-interface/181501-interface/png/document-3.png</file>
+        <file>../../../../Desktop/IMC_Logo.jpg</file>
+        <file>../../../../Desktop/IMG-20170414-WA0009.jpg</file>
     </qresource>
 </RCC>
